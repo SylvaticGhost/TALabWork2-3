@@ -28,7 +28,6 @@ public class Graph
         Queue<Vertex> queue = new();
         queue.Enqueue(start);
 
-
         while (queue.Count > 0)
         {
             Vertex currentVertex = queue.Dequeue();

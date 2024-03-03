@@ -58,7 +58,8 @@ bool EndOrContinue()
     }
 }
 
-char ChoosingAPoint()
+
+char ChoosingAPoint() //starting block in schem
 {
     while (true)
     {
@@ -110,6 +111,7 @@ FunctionType ChooseFunction()
     }
 }
 
+
 TypeOfAlgorithm ChoseAlgorithm()
 {
     while (true)
@@ -137,7 +139,7 @@ TypeOfAlgorithm ChoseAlgorithm()
 
 void Calculation()
 {
-    if (function == FunctionType.List)
+    if (function == FunctionType.List) // list of shortest destination
     {
         IEnumerable<Destination> points =
             graph.GetListOfShortest(graph[signStart], algorithm);
