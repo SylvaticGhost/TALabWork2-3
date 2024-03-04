@@ -4,6 +4,6 @@ public record Destination(char Sign, string Name, double Distance)
 {
     public override string ToString()
     {
-        return $"Sign: {Sign}, Name: {Name}, Distance: {Distance}";
+        return $"Sign: {Sign}, Name: {Name}, Distance: {Math.Round(Distance, 3)} km";
     }
 }

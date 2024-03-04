@@ -1,14 +1,5 @@
-﻿using System.Collections.ObjectModel;
-using System.Text;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using TALab2;
 
 namespace Lab2MainUi
@@ -19,18 +10,12 @@ namespace Lab2MainUi
     public partial class MainWindow : Window
     {
         private readonly ViewModels _dataContext;
-        private readonly DataProvider _dataProvider;
-        private readonly ObservableCollection<Vertex> _vertices;
 
         public MainWindow()
         {
             InitializeComponent();
-            _dataProvider = new DataProvider();
             _dataContext = new ViewModels();
             this.DataContext = _dataContext;
-
-            _vertices = _dataContext.Vertices; // Move this line before assigning it to ListMainPoints.ItemsSource
-
         }
 
 
@@ -100,7 +85,7 @@ namespace Lab2MainUi
 
                 string list = Functions.EnumerableToString(points);
 
-                ShowInfo("List: \n" + list);
+                ShowInfo($"Used algorithm {_dataContext.TypeOfAlgorithm}\n List: \n" + list);
                 return;
             }
 
@@ -113,7 +98,7 @@ namespace Lab2MainUi
                 else
                     distance = graph.FloydWarshallAlgorithm(_dataContext.VertexMain!, _dataContext.VertexSecond!);
 
-                ShowInfo($"From {_dataContext.VertexMain!.Sign} to {_dataContext.VertexSecond!.Sign}\n distance = {distance}");
+                ShowInfo($"Used algorithm {_dataContext.TypeOfAlgorithm}\n From {_dataContext.VertexMain!.Sign} to {_dataContext.VertexSecond!.Sign}\n distance = {Math.Round(distance, 3)} km");
             }
         }
     }
