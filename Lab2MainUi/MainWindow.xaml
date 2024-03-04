@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="470" Width="500" ResizeMode="NoResize">
     <Grid>
-      
+
         <StackPanel Background="DarkSalmon" Height="40" VerticalAlignment="Top" Grid.ColumnSpan="2">
             <Label FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Background="#FFAD4646" Foreground="#FFA78F8F" >FIND PATH</Label>
         </StackPanel>
@@ -40,20 +40,21 @@
         <StackPanel Margin="0 205 0 0" Background="AntiqueWhite" Orientation="Horizontal" Height="160" VerticalAlignment="Top" Grid.ColumnSpan="2">
             <StackPanel  Height="140" Width="250" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Vertical">
                 <Label Margin="20 30 20 20" HorizontalContentAlignment="Center" FontSize="16" FontStyle="Normal" FontFamily="Calibri" FontWeight="Bold">Select algorithm</Label>
-                <RadioButton FontFamily="Calibri" FontSize="14" HorizontalAlignment="Center" Name="DjikstraAlgorithm" Click="ChangeAlgorithm">Djikstra</RadioButton>
+                <RadioButton FontFamily="Calibri" FontSize="14" HorizontalAlignment="Center" Name="DjikstraAlgorithm" Click="ChangeAlgorithm" IsChecked="True">Djikstra</RadioButton>
                 <RadioButton FontFamily="Calibri" FontSize="14" HorizontalAlignment="Center" Margin="0 10 0 0" Name="FloydWarshallAlgorithm" Click="ChangeAlgorithm">Floyd-Warshall</RadioButton>
 
-                
+
             </StackPanel>
             <StackPanel Margin="0 0 0 0" Height="140" Width="250" VerticalAlignment="Top" HorizontalAlignment="Right" Orientation="Vertical">
                 <Label Margin="20 30 20 20" HorizontalContentAlignment="Center" FontSize="16" FontStyle="Normal" FontFamily="Calibri" FontWeight="Bold">Select function</Label>
                 <RadioButton FontFamily="Calibri" FontSize="14" HorizontalAlignment="Center" Click="ChangeFunctions" Name="DistanceToPoint">Calculate path</RadioButton>
-                <RadioButton FontFamily="Calibri" FontSize="14" HorizontalAlignment="Center" Margin="0 10 0 0" Click="ChangeFunctions" Name="List">Get list</RadioButton>
+                <RadioButton FontFamily="Calibri" FontSize="14" HorizontalAlignment="Center" Margin="0 10 0 0" Click="ChangeFunctions" Name="List" IsChecked="True">Get list</RadioButton>
             </StackPanel>
         </StackPanel>
         <Rectangle Height="5" Margin="0 365 0 0" VerticalAlignment="Top" Fill="#FFAD4646"></Rectangle>
-        <StackPanel  Height="85" Background="AntiqueWhite" VerticalAlignment="Bottom" Orientation="Vertical">
-            <Button HorizontalAlignment="Center" Margin="20 15 20 20" FontSize="16" Name="BtnCalculate" Padding="3" Click="BtnCalculate_OnClick">Calculate</Button>
+        <StackPanel  Height="95" Background="AntiqueWhite" VerticalAlignment="Top" Orientation="Vertical" Margin="0,369,0,0">
+            <Button HorizontalAlignment="Center" Margin="20 15 20 10" FontSize="16" Name="BtnCalculate" Padding="3" Click="BtnCalculate_OnClick">Calculate</Button>
+            <Label FontSize="14" HorizontalContentAlignment="Center" Margin="0 0 0 20" FontWeight="Bold" Foreground="#FFAD4646" >Лабораторна №2. Бригада №5</Label>
         </StackPanel>
     </Grid>
 </Window>
