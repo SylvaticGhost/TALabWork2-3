@@ -65,8 +65,8 @@ public class Tests
         {
             Console.WriteLine("Created list:");
             Console.WriteLine(Functions.EnumerableToString(listByDijkstra));
-            Console.WriteLine($"Time for Dijkstra algorithm: {stopWatchDijkstra.ElapsedMilliseconds:F0} ms");
-            Console.WriteLine($"Time for Floyd-Warshall algorithm: {stopWatchFloydWarshall.ElapsedMilliseconds:F0} ms");
+            Console.WriteLine($"Time for Dijkstra algorithm: {stopWatchDijkstra.ElapsedMilliseconds} ms");
+            Console.WriteLine($"Time for Floyd-Warshall algorithm: {stopWatchFloydWarshall.ElapsedMilliseconds} ms");
 
             Assert.Pass();
         }
