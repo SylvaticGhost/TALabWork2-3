@@ -26,13 +26,11 @@ public class Matrix
         get => Containing[i][j];
         set => Containing[i][j] = value;
     }
-    private readonly Functions _functions;
     
     public Matrix(int r, int c)
     {
         NumCols = c;
         NumRows = r;
-        _functions = new Functions();
     }
 
 
@@ -40,7 +38,6 @@ public class Matrix
     {
         NumCols = containing.First().Count;
         NumRows = containing.Count;
-        _functions = new Functions();
         Containing = containing;
     }
 

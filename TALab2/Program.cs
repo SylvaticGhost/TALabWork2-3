@@ -5,7 +5,7 @@ CultureInfo culture = CultureInfo.GetCultureInfo("de-DE");
 
 DataProvider dataProvider = new DataProvider();
 
-Graph graph = new Graph(dataProvider.Vertixes, dataProvider.Edges);
+Graph graph =  new Graph(dataProvider.Vertixes, dataProvider.Edges);
 
 char signStart;
 
@@ -144,21 +144,21 @@ void Calculation()
         IEnumerable<Destination> points =
             graph.GetListOfShortest(graph[signStart], algorithm);
 
-        string list = Functions.EnumerableToString(points);
+        string list = Functions.CollectionToString(points);
 
         Console.WriteLine("List: \n" + list);
     }
 
     if (function == FunctionType.DistanceToPoint)
     {
-        double distance;
+        WayToPoint distance;
 
         if (algorithm == TypeOfAlgorithm.DjikstraAlgorithm)
-            distance = graph.DjikstraAlgorithm(graph[signStart], graph[secondSign]);
+            distance = graph.DijkstraAlgorithm(graph[signStart], graph[secondSign]);
         else
             distance = graph.FloydWarshallAlgorithm(graph[signStart], graph[secondSign]);
 
-        Console.WriteLine($"From {signStart} to {secondSign}\n distance = {distance}");
+        Console.WriteLine($"From {signStart} to {secondSign}\n Way: {distance}");
     }
 }
 

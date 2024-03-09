@@ -24,7 +24,7 @@ public class Tests
     public void TestingDistanceToPointFunction(char vertex1, char vertex2)
     {
         Stopwatch stopWatchDijkstra = Stopwatch.StartNew();
-        double byDijkstraAlgorithm = _graph.DjikstraAlgorithm(_graph[vertex1], _graph[vertex2]);
+        double byDijkstraAlgorithm = _graph.DijkstraAlgorithm(_graph[vertex1], _graph[vertex2]);
         stopWatchDijkstra.Stop();
 
         Stopwatch stopWatchFloydWarshall = Stopwatch.StartNew();
@@ -64,19 +64,19 @@ public class Tests
         if (CompareList(listByDijkstra.ToList(), listByFloydWarshall.ToList()))
         {
             Console.WriteLine("Created list:");
-            Console.WriteLine(Functions.EnumerableToString(listByDijkstra));
-            Console.WriteLine($"Time for Dijkstra algorithm: {stopWatchDijkstra.ElapsedMilliseconds:F0} ms");
-            Console.WriteLine($"Time for Floyd-Warshall algorithm: {stopWatchFloydWarshall.ElapsedMilliseconds:F0} ms");
+            Console.WriteLine(Functions.CollectionToString(listByDijkstra));
+            Console.WriteLine($"Time for Dijkstra algorithm: {stopWatchDijkstra.ElapsedMilliseconds} ms");
+            Console.WriteLine($"Time for Floyd-Warshall algorithm: {stopWatchFloydWarshall.ElapsedMilliseconds} ms");
 
             Assert.Pass();
         }
         else
         {
             Console.WriteLine("List by Dijkstra algorithm:");
-            Console.WriteLine(Functions.EnumerableToString(listByDijkstra));
+            Console.WriteLine(Functions.CollectionToString(listByDijkstra));
 
             Console.WriteLine("List by Floyd-Warshall algorithm");
-            Console.WriteLine(Functions.EnumerableToString(listByFloydWarshall));
+            Console.WriteLine(Functions.CollectionToString(listByFloydWarshall));
 
             Assert.Fail();
         }

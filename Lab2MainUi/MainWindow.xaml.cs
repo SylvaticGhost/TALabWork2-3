@@ -83,7 +83,7 @@ namespace Lab2MainUi
                 IEnumerable<Destination> points =
                     graph.GetListOfShortest(_dataContext.VertexMain!, _dataContext.TypeOfAlgorithm);
 
-                string list = Functions.EnumerableToString(points);
+                string list = Functions.CollectionToString(points);
 
                 ShowInfo($"Used algorithm {_dataContext.TypeOfAlgorithm}\n List: \n" + list);
                 return;
@@ -94,7 +94,7 @@ namespace Lab2MainUi
                 double distance;
 
                 if (_dataContext.TypeOfAlgorithm == TypeOfAlgorithm.DjikstraAlgorithm)
-                    distance = graph.DjikstraAlgorithm(_dataContext.VertexMain!, _dataContext.VertexSecond!);
+                    distance = graph.DijkstraAlgorithm(_dataContext.VertexMain!, _dataContext.VertexSecond!);
                 else
                     distance = graph.FloydWarshallAlgorithm(_dataContext.VertexMain!, _dataContext.VertexSecond!);
 
