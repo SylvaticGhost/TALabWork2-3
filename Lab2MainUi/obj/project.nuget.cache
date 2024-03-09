@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "myYC+qn0UmHpSbxNtltYimaTs0xY2xcKofHh2Z7mPBDTyILoqsh7L8mtAvi7V6VWAWCuZnqcr8sEXOuvQoJOhw==",
+  "dgSpecHash": "JBl/L16BUNCiZwPVXC0xgORrSJUL3Sa64YSrjGry/JWpMUW3TbV8viB2+3C5STUHFl2cTDX1eVE9Hmq4ja7TAA==",
   "success": true,
-  "projectFilePath": "G:\\OP code\\TA\\RestoringTaLab2\\Lab2MainUi\\Lab2MainUi.csproj",
+  "projectFilePath": "/Users/Kostia/Documents/GitHub/TALabWork2/Lab2MainUi/Lab2MainUi.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ktkac\\.nuget\\packages\\numsharp\\0.30.0\\numsharp.0.30.0.nupkg.sha512",
-    "C:\\Users\\ktkac\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512"
+    "/Users/Kostia/.nuget/packages/numsharp/0.30.0/numsharp.0.30.0.nupkg.sha512",
+    "/Users/Kostia/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

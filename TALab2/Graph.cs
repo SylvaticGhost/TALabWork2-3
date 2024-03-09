@@ -12,7 +12,7 @@ public class Graph
 
     private readonly GraphOperations _graphOperations;
     private readonly List<Edge> _checkedEdges;
-    public Vertex this[char sign] => GetVertix(sign);
+    public Vertex this[char sign] => GetVertex(sign);
 
     public Graph(IEnumerable<Vertex> vertices, IEnumerable<Edge> edges)
     {
@@ -23,11 +23,14 @@ public class Graph
     }
 
 
-    public double DjikstraAlgorithm(Vertex start, Vertex end)
+    public double DijkstraAlgorithm(Vertex start, Vertex end)
     {
         Queue<Vertex> queue = new();
+        
+        start.CurrentRoadInGraph = new();
+        start.CurrentRoadInGraph.AddLast(start.Sign);
+        
         queue.Enqueue(start);
-
 
         while (queue.Count > 0)
         {
@@ -38,7 +41,7 @@ public class Graph
 
             Console.WriteLine($"Current vertex: {currentVertex}, cost: {currentVertex.CurrentWeightInGraph}");
 
-            IEnumerable<Edge> availableEdges = GetEdgesForVertix(currentVertex);
+            IReadOnlyCollection<Edge> availableEdges = GetEdgesForVertex(currentVertex).ToList();
             Console.Write($"Available edges for {currentVertex.Sign}: ");
 
             foreach (Edge e in availableEdges)
@@ -52,19 +55,25 @@ public class Graph
             {
                 Console.WriteLine($"Checked edge now: {edge}");
 
-                Vertex? secondVertix = edge.GetVertixOppositeTo(currentVertex);
-                Console.WriteLine($"Second Vertex is: {secondVertix}");
+                Vertex? secondVertex = edge.GetVertixOppositeTo(currentVertex);
+                Console.WriteLine($"Second Vertex is: {secondVertex}");
 
-                //if new discovered way is better update cost of second vertex
-                if (currentVertex.CurrentWeightInGraph + edge.Weight < secondVertix?.CurrentWeightInGraph
-                    || secondVertix.CurrentWeightInGraph == 0) // if vertex costs 0 - it hasn't been discovered
+                //if new discovered way is better --> update cost of second vertex
+                if (currentVertex.CurrentWeightInGraph + edge.Weight < secondVertex?.CurrentWeightInGraph
+                    || secondVertex!.CurrentWeightInGraph == 0) // if vertex costs 0 -> it hasn't been discovered
                 {
-                    secondVertix.CurrentWeightInGraph = currentVertex.CurrentWeightInGraph + edge.Weight;
-                    Console.WriteLine($"Updating cost, now at {secondVertix.Sign}: {secondVertix.CurrentWeightInGraph}");
+                    secondVertex.CurrentWeightInGraph = currentVertex.CurrentWeightInGraph + edge.Weight;
+                    
+                    LinkedList<char> newRoad = new(currentVertex.CurrentRoadInGraph);
+                    newRoad.AddLast(secondVertex.Sign);
+                    secondVertex.CurrentRoadInGraph = newRoad;
+                    
+                    Console.WriteLine($"Updating cost, now at {secondVertex.Sign}: {secondVertex.CurrentWeightInGraph}");
+                    Console.WriteLine($"Road to {secondVertex.Sign}: {Functions.LinkedListToString(secondVertex.CurrentRoadInGraph)}");
                 }
 
                 _checkedEdges.Add(edge);
-                queue.Enqueue(secondVertix);
+                queue.Enqueue(secondVertex);
 
             }
             Console.WriteLine();
@@ -72,11 +81,14 @@ public class Graph
 
         Console.WriteLine("End of algorithm");
         _checkedEdges.Clear();
+
+        Console.WriteLine($"Road from {start.Sign} to {end.Sign}: {Functions.CollectionToString(end.CurrentRoadInGraph)}");
+        
         return end.CurrentWeightInGraph;
     }
 
 
-    private IEnumerable<Edge> GetEdgesForVertix(Vertex vertex)
+    private IEnumerable<Edge> GetEdgesForVertex(Vertex vertex)
     {
         return Edges.Where(edge =>
                 edge.Vertix1.Sign == vertex.Sign || (edge.Vertix2.Sign == vertex.Sign && !edge.Oriented))
@@ -85,15 +97,15 @@ public class Graph
     }
 
 
-    private Vertex GetVertix(char sign)
+    private Vertex GetVertex(char sign)
     {
-        return Vertices.Where(v => v.Sign == sign).FirstOrDefault();
+        return Vertices.FirstOrDefault(v => v.Sign == sign)!;
     }
 
 
-    private static int GetIndexFromSign(char sign) => sign - 'A';
+    public static int GetIndexFromSign(char sign) => sign - 'A';
 
-    private static char GetSignFromIndex(int index) => (char)(index + 'A');
+    public static char GetSignFromIndex(int index) => (char)(index + 'A');
 
     private Matrix CreateAdjacencyMatrix()
     {
@@ -125,6 +137,8 @@ public class Graph
     private Matrix CreateDistanceMatrix()
     {
         Matrix adjacencyMatrix = CreateAdjacencyMatrix();
+        WaysTable table = new(this, adjacencyMatrix);
+        
         Console.WriteLine("adjacencyMatrix");
         Console.WriteLine(adjacencyMatrix);
 
@@ -134,17 +148,24 @@ public class Graph
 
         for (int i = 0; i < Vertices.Count(); i++)
         {
-            delta = _graphOperations.CreateDistanceMatrix(delta, i);
+            delta = _graphOperations.CreateDistanceMatrix(delta, i, table);
             Console.WriteLine("Distance " + i);
             Console.WriteLine(delta);
         }
 
+        Console.WriteLine("Ways table:");
+        Console.WriteLine(table);
+        
         return delta;
     }
 
 
     public double FloydWarshallAlgorithm(Vertex vertex1, Vertex vertex2)
     {
+        InitStartWayInVertex();
+        
+        List<List<LinkedList<char>>> ways = new List<List<LinkedList<char>>>();
+        
         Matrix distanceMatrix = CreateDistanceMatrix();
 
         Console.WriteLine(distanceMatrix);
@@ -161,7 +182,7 @@ public class Graph
         {
             foreach (Vertex vertex in Vertices.Except(new Vertex[] { start }, new VertexComparer()))
             {
-                double distance = DjikstraAlgorithm(start, vertex);
+                double distance = DijkstraAlgorithm(start, vertex);
 
                 list.Add(new Destination(vertex.Sign, vertex.Name, distance));
             }
@@ -190,6 +211,19 @@ public class Graph
         foreach (Vertex vertex in Vertices)
         {
             vertex.CurrentWeightInGraph = 0;
+        }
+    }
+
+    
+    private void InitStartWayInVertex()
+    {
+        for(char c = 'A'; c < 'A' + Vertices.Count(); c++)
+        {
+            Vertex vertex = this[c];
+            LinkedList<char> road = [];
+            
+            road.AddLast(vertex.Sign);
+            vertex.CurrentRoadInGraph = road;
         }
     }
 
