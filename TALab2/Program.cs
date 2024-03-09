@@ -149,14 +149,14 @@ void Calculation()
 
     if (function == FunctionType.DistanceToPoint)
     {
-        double distance;
+        WayToPoint distance;
 
         if (algorithm == TypeOfAlgorithm.DjikstraAlgorithm)
             distance = graph.DijkstraAlgorithm(graph[signStart], graph[secondSign]);
         else
             distance = graph.FloydWarshallAlgorithm(graph[signStart], graph[secondSign]);
 
-        Console.WriteLine($"From {signStart} to {secondSign}\n distance = {distance}");
+        Console.WriteLine($"From {signStart} to {secondSign}\n Way: {distance}");
     }
 }
 

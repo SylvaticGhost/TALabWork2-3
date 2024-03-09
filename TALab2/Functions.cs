@@ -27,7 +27,7 @@ public static class Functions
     }
     
     
-    public static string LinkedListToString<T>(LinkedList<T> collection)
+    public static string WayListToString<T>(IEnumerable<T> collection)
     {
         string result = "";
 
@@ -40,4 +40,19 @@ public static class Functions
 
         return result;
     }
+    
+    
+    // public static string WayListToString<T>(LinkedList<T> collection)
+    // {
+    //     string result = "";
+    //
+    //     foreach (T obj in collection)
+    //     {
+    //         result += obj!.ToString() + " -> ";
+    //     }
+    //     
+    //     result = result[..^4];
+    //
+    //     return result;
+    // }
 }

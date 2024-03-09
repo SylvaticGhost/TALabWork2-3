@@ -47,7 +47,7 @@ public class GraphOperations
                     (previousDistanceM[i][j] <= 0 && a > 0))
                 {
                     distanceMatrix[i][j] = a;
-                    table[i, j].AddLast(Graph.GetSignFromIndex(vertex));
+                    table[i, j].Add(Graph.GetSignFromIndex(vertex));
                 }
                 else
                     distanceMatrix[i][j] = previousDistanceM[i][j];

@@ -13,6 +13,8 @@ public class Graph
     private readonly GraphOperations _graphOperations;
     private readonly List<Edge> _checkedEdges;
     public Vertex this[char sign] => GetVertex(sign);
+    
+    public Dictionary<char, List<char>>? NeighbourVertices { get; set; }
 
     public Graph(IEnumerable<Vertex> vertices, IEnumerable<Edge> edges)
     {
@@ -20,10 +22,11 @@ public class Graph
         Edges = edges;
         _graphOperations = new();
         _checkedEdges = [];
+        InitNeighbourVerticesDictionary();
     }
 
 
-    public double DijkstraAlgorithm(Vertex start, Vertex end)
+    public WayToPoint DijkstraAlgorithm(Vertex start, Vertex end)
     {
         Queue<Vertex> queue = new();
         
@@ -69,7 +72,7 @@ public class Graph
                     secondVertex.CurrentRoadInGraph = newRoad;
                     
                     Console.WriteLine($"Updating cost, now at {secondVertex.Sign}: {secondVertex.CurrentWeightInGraph}");
-                    Console.WriteLine($"Road to {secondVertex.Sign}: {Functions.LinkedListToString(secondVertex.CurrentRoadInGraph)}");
+                    Console.WriteLine($"Road to {secondVertex.Sign}: {Functions.WayListToString(secondVertex.CurrentRoadInGraph)}");
                 }
 
                 _checkedEdges.Add(edge);
@@ -84,7 +87,7 @@ public class Graph
 
         Console.WriteLine($"Road from {start.Sign} to {end.Sign}: {Functions.CollectionToString(end.CurrentRoadInGraph)}");
         
-        return end.CurrentWeightInGraph;
+        return new(end.CurrentWeightInGraph, end.CurrentRoadInGraph.ToList());
     }
 
 
@@ -134,11 +137,8 @@ public class Graph
     }
 
 
-    private Matrix CreateDistanceMatrix()
+    private Matrix CreateDistanceMatrix(WaysTable table, Matrix adjacencyMatrix)
     {
-        Matrix adjacencyMatrix = CreateAdjacencyMatrix();
-        WaysTable table = new(this, adjacencyMatrix);
-        
         Console.WriteLine("adjacencyMatrix");
         Console.WriteLine(adjacencyMatrix);
 
@@ -152,7 +152,8 @@ public class Graph
             Console.WriteLine("Distance " + i);
             Console.WriteLine(delta);
         }
-
+        
+        table.FinishTable();
         Console.WriteLine("Ways table:");
         Console.WriteLine(table);
         
@@ -160,17 +161,19 @@ public class Graph
     }
 
 
-    public double FloydWarshallAlgorithm(Vertex vertex1, Vertex vertex2)
+    public WayToPoint FloydWarshallAlgorithm(Vertex vertex1, Vertex vertex2)
     {
-        InitStartWayInVertex();
+        Matrix adjacencyMatrix = CreateAdjacencyMatrix();
+        WaysTable table = new(this, adjacencyMatrix);
         
-        List<List<LinkedList<char>>> ways = new List<List<LinkedList<char>>>();
-        
-        Matrix distanceMatrix = CreateDistanceMatrix();
+        Matrix distanceMatrix = CreateDistanceMatrix(table, adjacencyMatrix);
 
         Console.WriteLine(distanceMatrix);
+        
+        int index1 = GetIndexFromSign(vertex1.Sign);
+        int index2 = GetIndexFromSign(vertex2.Sign);
 
-        return distanceMatrix[GetIndexFromSign(vertex1.Sign)][GetIndexFromSign(vertex2.Sign)];
+        return new WayToPoint(distanceMatrix[index1, index2], table[index1, index2]);
     }
 
 
@@ -182,14 +185,16 @@ public class Graph
         {
             foreach (Vertex vertex in Vertices.Except(new Vertex[] { start }, new VertexComparer()))
             {
-                double distance = DijkstraAlgorithm(start, vertex);
+                var distance = DijkstraAlgorithm(start, vertex);
 
                 list.Add(new Destination(vertex.Sign, vertex.Name, distance));
             }
         }
         else if (typeOfAlgorithm == TypeOfAlgorithm.FloydWarshallAlgorithm)
         {
-            List<double> distances = CreateDistanceMatrix()[GetIndexFromSign(start.Sign)];
+            Matrix adjacencyMatrix = CreateAdjacencyMatrix();
+            WaysTable table = new(this, adjacencyMatrix);
+            List<double> distances = CreateDistanceMatrix(table, adjacencyMatrix)[GetIndexFromSign(start.Sign)];
 
             for (int i = 0; i < Vertices.Count(); i++)
             {
@@ -197,12 +202,14 @@ public class Graph
                 
                 if (start.Sign == signOfOther)
                     continue;
+                
+                List<char> way = table[GetIndexFromSign(start.Sign), i];
 
-                list.Add(new Destination(signOfOther, this[signOfOther].Name, distances[i]));
+                list.Add(new Destination(signOfOther, this[signOfOther].Name, new WayToPoint(distances[i], way)));
             }
         }
 
-        return list.OrderBy(d => d.Distance);
+        return list.OrderBy(d => d.Way.Distance);
     }
 
 
@@ -213,18 +220,28 @@ public class Graph
             vertex.CurrentWeightInGraph = 0;
         }
     }
-
     
-    private void InitStartWayInVertex()
+    private void InitNeighbourVerticesDictionary()
     {
-        for(char c = 'A'; c < 'A' + Vertices.Count(); c++)
+        NeighbourVertices = new();
+        
+        foreach (Vertex vertex in Vertices)
         {
-            Vertex vertex = this[c];
-            LinkedList<char> road = [];
+            List<char> neighbours = new();
             
-            road.AddLast(vertex.Sign);
-            vertex.CurrentRoadInGraph = road;
+            foreach (Edge edge in Edges)
+            {
+                if (edge.Vertix1.Sign == vertex.Sign)
+                    neighbours.Add(edge.Vertix2.Sign);
+                else if (edge.Vertix2.Sign == vertex.Sign && !edge.Oriented)
+                    neighbours.Add(edge.Vertix1.Sign);
+            }
+            
+            NeighbourVertices.Add(vertex.Sign, neighbours);
         }
     }
+    
+    
+    public bool CheckIfVerticesAreNeighbours(char sign1, char sign2) => NeighbourVertices![sign1].Contains(sign2);
 
 }
