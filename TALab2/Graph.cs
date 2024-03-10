@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using TALab2.Comparer;
 using System;
+using Vertex = TALab2.Vertex;
 
 namespace TALab2;
 
@@ -244,4 +245,12 @@ public class Graph
     
     public bool CheckIfVerticesAreNeighbours(char sign1, char sign2) => NeighbourVertices![sign1].Contains(sign2);
 
+    
+    public Edge GetEdge(char sign1, char sign2)
+    {
+        return Edges.First(e => e.Vertix1.Sign == sign1 && e.Vertix2.Sign == sign2 
+                                || e.Vertix1.Sign == sign2 && e.Vertix2.Sign == sign1);
+    }
 }
+
+// 0,779 km // F J I
