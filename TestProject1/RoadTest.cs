@@ -18,7 +18,7 @@ public class RoadTest
         Graph graph = new Graph(dataProvider.Vertixes, dataProvider.Edges);
 
         var result = graph.GetListOfShortest(graph[start], TypeOfAlgorithm.FloydWarshallAlgorithm);
-        
+        bool failed = false;
         foreach (var way in result)
         {
             double d = 0;
@@ -28,6 +28,7 @@ public class RoadTest
                 d += graph.GetEdge(way.Way.Path[i], way.Way.Path[i + 1]).Weight;
             }
             
+            
             if (Math.Abs(d - way.Way.Distance) > calculationError)
             {
                 Console.WriteLine("Test failed on case");
@@ -35,9 +36,12 @@ public class RoadTest
                 Console.WriteLine("Expected distance: " + way.Way.Distance);
                 Console.WriteLine("Actual distance: " + d);
                 Console.WriteLine("Difference: " + Math.Abs(d - way.Way.Distance));
-                Assert.Fail();
+                failed = true;
             }
         }
+        
+        if(failed)
+            Assert.Fail();
         
         Assert.Pass();
     }

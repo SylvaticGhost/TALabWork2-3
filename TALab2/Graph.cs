@@ -153,7 +153,9 @@ public class Graph
             Console.WriteLine("Distance " + i);
             Console.WriteLine(delta);
         }
-        
+
+        Console.WriteLine("Ways table:");
+        Console.WriteLine(table);
         table.FinishTable();
         Console.WriteLine("Ways table:");
         Console.WriteLine(table);
@@ -252,5 +254,3 @@ public class Graph
                                 || e.Vertix1.Sign == sign2 && e.Vertix2.Sign == sign1);
     }
 }
-
-// 0,779 km // F J I

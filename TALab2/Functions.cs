@@ -1,4 +1,5 @@
-﻿using NumSharp;
+﻿using System.Globalization;
+using NumSharp;
 using NumSharp.Generic;
 
 namespace TALab2;
@@ -30,13 +31,15 @@ public static class Functions
     public static string WayListToString<T>(IEnumerable<T> collection)
     {
         string result = "";
+        
 
         foreach (T obj in collection)
         {
             result += obj!.ToString() + " -> ";
         }
         
-        result = result[..^4];
+        if(result.Length >= 4)
+            result = result[..^4];
 
         return result;
     }

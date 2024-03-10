@@ -56,6 +56,4 @@ public class GraphOperations
 
         return distanceMatrix;
     }
-    
-    private static int GetIndexFromSign(char sign) => sign - 'A';
 }
