@@ -1,5 +1,9 @@
+@using TALab2
 <h3>Way</h3>
-
+<div>
+    <a>@WayToPoint.ToStringLong(Graph)</a>
+</div>
 @code {
-    
+    [Parameter] public WayToPoint WayToPoint { get; set; }
+    [Parameter] public Graph Graph { get; set; }
 }

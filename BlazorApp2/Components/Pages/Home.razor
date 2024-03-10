@@ -13,7 +13,7 @@
 
 <div class="main-container">
     <div class="map-kyiv">
-        <Marker Vertex="@_vertices[0]"></Marker>
+        <Marker Vertex="@_vertices[0]" X="100"></Marker>
         
     </div>
     <div class="selection-div">
@@ -37,8 +37,22 @@
 
 
 <div style="display: flex; justify-content: center; align-items: center; margin: 15px; padding: 10px">
-     <button class="calculate-button" @onclick="OnCalculate">Calculate</button>
- </div>
+    <button class="calculate-button" @onclick="OnCalculate">Calculate</button>
+</div>
+
+<div class="result-container">
+    @if (GotResult)
+    {
+        @if(functionTypes[0] == FunctionType.List)
+        {
+            <ListOfDestination Destinations="@_destinations" Graph="@_graph" Start="@start!.Sign"/>
+        }
+        else
+        {
+            <Way WayToPoint="@_wayToPoint" Graph="@_graph"/>
+        }
+    }
+</div>
 
 
 @code {
@@ -61,7 +75,9 @@
 
     Vertex? start;
     Vertex? end;
-
+    
+    bool GotResult => _destinations != null || _wayToPoint != null;
+    
     protected override void OnInitialized()
     {
         SelectedFunction = functionTypes[0];

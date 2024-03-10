@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/Components/Elements/ListOfDestination.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9FbGVtZW50cy9MaXN0T2ZEZXN0aW5hdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/Components/Elements/Marker.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9FbGVtZW50cy9NYXJrZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

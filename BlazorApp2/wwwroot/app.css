@@ -138,10 +138,10 @@ h1:focus {
 
 .calculate-button {
     margin-top: 1rem;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 12px;
+    border-radius: 15px;
     background-color: #1b6ec2;
     color: white;
-    font-size: 16pt;
+    font-size: 18pt;
     cursor: pointer;
 }
