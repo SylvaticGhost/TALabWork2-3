@@ -1,0 +1,18 @@
+@using TALab2
+
+<div style="margin-right: @Width; margin-top: @Height">
+    <div style="height: 20px; width: 40px; align-content: center; justify-content: center">
+        <a style="font-size: 17px; font-weight: bold; color: whitesmoke; align-self: center">@Vertex.Sign</a>
+    </div>
+    <div style="background-image: url('pin.png'); mix-blend-mode: multiply; background-color: transparent; height: 40px; width: 40px"> </div>
+</div>
+
+@code {
+    [Parameter]
+    public Vertex Vertex { get; set; }
+
+    [Parameter] 
+    public int Width { get; set; } = 0;
+    [Parameter]
+    public int Height { get; set; } = 0;
+}

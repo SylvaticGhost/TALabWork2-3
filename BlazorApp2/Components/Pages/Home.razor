@@ -1,0 +1,100 @@
+﻿@page "/"
+@using TALab2
+@rendermode InteractiveServer
+@using BlazorApp2.Components.Elements
+
+<PageTitle>Home</PageTitle>
+
+<h1>Kyiv center map</h1>
+
+<p style="font-size:18pt">
+    Chose one point to get list of nearest places, and two points if you need to calculate the distance between them.
+</p>
+
+<div class="main-container">
+    <div class="map-kyiv">
+        <Marker Vertex="@_vertices[0]"></Marker>
+        
+    </div>
+    <div class="selection-div">
+        <a style="font-weight: bold">Select a function<br/></a>
+        <select @bind="SelectedFunction">
+            @foreach (var functionType in functionTypes)
+            {
+                <option value="@functionType">@functionType</option>
+            }
+        </select>
+        <br/>
+        <a style="font-weight: bold">Select an algorithm<br/></a>
+        <select @bind="SelectedAlgorithm">
+            @foreach (var typeOfAlgorithm in typeOfAlgorithms)
+            {
+                <option value="@typeOfAlgorithm">@typeOfAlgorithm</option>
+            }
+        </select>
+    </div>
+</div>
+
+
+<div style="display: flex; justify-content: center; align-items: center; margin: 15px; padding: 10px">
+     <button class="calculate-button" @onclick="OnCalculate">Calculate</button>
+ </div>
+
+
+@code {
+    
+    private readonly DataProvider _dataProvider = new DataProvider();
+
+    FunctionType[] functionTypes = [FunctionType.DistanceToPoint, FunctionType.List];
+
+    TypeOfAlgorithm[] typeOfAlgorithms = [TypeOfAlgorithm.DjikstraAlgorithm, TypeOfAlgorithm.FloydWarshallAlgorithm];
+    
+    FunctionType SelectedFunction { get; set; }
+
+    TypeOfAlgorithm SelectedAlgorithm { get; set; }
+    
+    private List<Vertex> _vertices;
+    private Graph _graph;
+    
+    private List<Destination>? _destinations;
+    private WayToPoint? _wayToPoint;
+
+    Vertex? start;
+    Vertex? end;
+
+    protected override void OnInitialized()
+    {
+        SelectedFunction = functionTypes[0];
+        SelectedAlgorithm = typeOfAlgorithms[0];
+        _vertices = _dataProvider.Vertixes;
+        _graph = new Graph(_dataProvider.Vertixes, _dataProvider.Edges);
+    }
+    
+    Task OnCalculate()
+    {
+        Calculate();
+        return Task.CompletedTask;
+    }
+    
+    void Calculate()
+    {
+        if (functionTypes[0] == FunctionType.List)
+        {
+            IEnumerable<Destination> destinations = _graph.GetListOfShortest(start, typeOfAlgorithms[0]);
+        }
+        else
+        {
+            if (typeOfAlgorithms[0] == TypeOfAlgorithm.DjikstraAlgorithm)
+            {
+                _wayToPoint = _graph.DijkstraAlgorithm(start, end);
+            }
+            else
+            {
+                _wayToPoint = _graph.FloydWarshallAlgorithm(start, end);
+            }
+        }
+    }
+    
+    
+
+}
