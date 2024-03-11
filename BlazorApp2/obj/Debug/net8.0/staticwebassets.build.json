@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y8rDa0fYsUheXfAJNhaim1tt/Ob4OurcRBtKwnXvlhk=",
+  "Hash": "hS5JEf4WQjWHoSEDwwEW9pZJOSnSxcWoskUpQ/jyRaQ=",
   "Source": "BlazorApp2",
   "BasePath": "_content/BlazorApp2",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/KyivCenterMap.png"
+    },
+    {
+      "Identity": "/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/wwwroot/Map.jpg",
+      "SourceId": "BlazorApp2",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/wwwroot/",
+      "BasePath": "_content/BlazorApp2",
+      "RelativePath": "Map.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Map.jpg"
     },
     {
       "Identity": "/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/wwwroot/pin.png",
