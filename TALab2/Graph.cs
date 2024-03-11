@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using TALab2.Comparer;
 using System;
+using Vertex = TALab2.Vertex;
 
 namespace TALab2;
 
@@ -86,8 +87,12 @@ public class Graph
         _checkedEdges.Clear();
 
         Console.WriteLine($"Road from {start.Sign} to {end.Sign}: {Functions.CollectionToString(end.CurrentRoadInGraph)}");
+
+        var result = new WayToPoint(end.CurrentWeightInGraph, new List<char>(end.CurrentRoadInGraph.ToList()));
         
-        return new(end.CurrentWeightInGraph, end.CurrentRoadInGraph.ToList());
+        ResetVertices();
+        
+        return result;
     }
 
 
@@ -152,7 +157,9 @@ public class Graph
             Console.WriteLine("Distance " + i);
             Console.WriteLine(delta);
         }
-        
+
+        Console.WriteLine("Ways table:");
+        Console.WriteLine(table);
         table.FinishTable();
         Console.WriteLine("Ways table:");
         Console.WriteLine(table);
@@ -213,11 +220,12 @@ public class Graph
     }
 
 
-    public void ResetVertexWeight()
+    public void ResetVertices()
     {
         foreach (Vertex vertex in Vertices)
         {
             vertex.CurrentWeightInGraph = 0;
+            vertex.CurrentRoadInGraph = new LinkedList<char>();
         }
     }
     
@@ -244,4 +252,13 @@ public class Graph
     
     public bool CheckIfVerticesAreNeighbours(char sign1, char sign2) => NeighbourVertices![sign1].Contains(sign2);
 
+    
+    public Edge GetEdge(char sign1, char sign2)
+    {
+        return Edges.First(e => e.Vertix1.Sign == sign1 && e.Vertix2.Sign == sign2 
+                                || e.Vertix1.Sign == sign2 && e.Vertix2.Sign == sign1);
+    }
+    
+    
+    public bool ValidVertexSign(char sign) => Vertices.Any(v => v.Sign == sign);
 }

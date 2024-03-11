@@ -20,11 +20,11 @@ public class WaysTable
         int size = graph.Vertices.Count();
         _size = size;
         List<List<List<char>>> table = [];
-
+        
         for (int i = 0; i < size; i++)
         {
             List<List<char>> row = [];
-
+        
             for (int j = 0; j < size; j++)
             {
                 List<char> cell = [];
@@ -34,10 +34,10 @@ public class WaysTable
             table.Add(row);
         }
         
-        Table = table;
+        Table =  table;
         
         var matrix = adjacencyMatrix.Containing;
-
+        
         for (int i = 0; i < size; i++)
         {
             for (int j = 0; j < size; j++)
@@ -87,12 +87,18 @@ public class WaysTable
                     
                     if(this[i, j].Last() == end)
                         continue;
+                    
+                    this[i, j].Add(end);
 
                     if (!_graph.CheckIfVerticesAreNeighbours(start, end))
                     {
-                        List<char> current = this[i, j];
-
-                        for (int k = 0; k < current.Count - 1; k++)
+                        if (this[i, j].Count > 2 && this[i, j].Last() != end)
+                        {
+                            this[i, j].RemoveRange(1, this[i,j].Count - 2);
+                        }
+                        
+                        
+                        for (int k = 0; k < this[i, j].Count - 1; k++)
                         {
                             if(!_graph.CheckIfVerticesAreNeighbours(this[i, j].ElementAt(k), this[i, j].ElementAt(k + 1)))
                             {
@@ -101,18 +107,33 @@ public class WaysTable
 
                                 List<char> addRoad = new(this[index1, index2]);
                                 
-                                if(addRoad.Count <= 2)
+                                if(addRoad.Count < 2)
                                     continue;
                                 
                                 addRoad.RemoveAt(0);
                                 addRoad.RemoveAt(addRoad.Count - 1);
-                                
-                                this[i, j].InsertRange(k + 1, addRoad);
+                                if(this[i, j].Except(addRoad).Any())
+                                    this[i, j].InsertRange(k + 1, addRoad);
+
+                                k--;
+                            }
+                        }
+                        
+                        
+                    }
+                    
+                    //simplify way if it contains loops
+                    for (int k = 0; k < this[i, j].Count - 1; k++)
+                    {
+                        for (int l = k + 2; l < this[i, j].Count; l++)
+                        {
+                            if(_graph.CheckIfVerticesAreNeighbours(this[i, j].ElementAt(k), this[i, j].ElementAt(l)))
+                            {
+                                this[i, j].RemoveRange(k + 1, l - k - 1);
+                                l = k + 2;
                             }
                         }
                     }
-                    
-                    this[i, j].Add(end);
                 }
             }
         }

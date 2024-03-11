@@ -28,4 +28,10 @@ public class Vertex
         return $"{Sign} Cords: {Cords}, Name: {Name}";
     }
     
+    
+    public string ToShortString()
+    {
+        return $"{Sign} {Name}";
+    }
+    
 }

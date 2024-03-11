@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TALab2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86e87cbd957ba39d6ec6065df56d68c880ad5c5e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df5edc425aa766a25df120e7a8de73504a37c548")]
 [assembly: System.Reflection.AssemblyProductAttribute("TALab2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TALab2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
