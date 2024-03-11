@@ -44,7 +44,7 @@ bool EndOrContinue()
         if (input == "Y")
         {
             Console.WriteLine("\n Continue... \n");
-            graph.ResetVertexWeight();
+            graph.ResetVertices();
             return true;
         }
 

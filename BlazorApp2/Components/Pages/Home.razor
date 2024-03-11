@@ -35,7 +35,7 @@
             </select>
             <br/>
             <a style="font-weight: bold">Select a start point<br/></a>
-            <select @bind="start" @onclick="CancelGotResult">
+            <select @onchange="ChangeStart">
                 @foreach (var vertex in _vertices)
                 {
                     <option value="@vertex.Sign">@vertex.ToShortString()</option>
@@ -43,7 +43,7 @@
             </select>
             <br/>
             <a style="font-weight: bold">Select an end point<br/></a>
-            <select @bind="end" @onclick="CancelGotResult">
+            <select @onchange="@ChangeEnd">
                 @foreach (var vertex in _vertices)
                 {
                     <option value="@vertex.Sign">@vertex.ToShortString()</option>
@@ -73,7 +73,7 @@
 </div>
 
 <div class="result-container">
-    <h3>Result</h3>
+    
     @if (GotResult && string.IsNullOrEmpty(errorMessage))
     {
         @if (SelectedFunction == FunctionType.List)
@@ -84,6 +84,8 @@
         {
             <Way WayToPoint="@_wayToPoint" Graph="@_graph"/>
         }
+        
+        <button class="rst-button" @onclick="CancelGotResult">Reset Result</button>
     }
 </div>
 
@@ -105,9 +107,11 @@
     
     private List<Destination>? _destinations;
     private WayToPoint? _wayToPoint;
+    
     string errorMessage = string.Empty;
-    char start;
-    char end;
+    
+    char start = 'A';
+    char end = 'B';
     
     bool GotResult = false;
     
@@ -118,6 +122,21 @@
         _vertices = _dataProvider.Vertixes;
         _graph = new Graph(_dataProvider.Vertixes, _dataProvider.Edges);
     }
+    
+    
+    void ChangeStart(ChangeEventArgs e)
+    {
+        start = e.Value!.ToString()![0];
+        CancelGotResult();
+    }
+    
+    
+    void ChangeEnd(ChangeEventArgs e)
+    {
+        end = e.Value!.ToString()![0];
+        CancelGotResult();
+    }
+    
     
     Task OnCalculate()
     {
@@ -141,6 +160,7 @@
         return Task.CompletedTask;
     }
 
+    
     Task CancelGotResult()
     {
         _destinations = null;
@@ -150,11 +170,13 @@
         return Task.CompletedTask;
     }
     
+    
     void Calculate()
     {
         if (SelectedFunction == FunctionType.List)
         {
-            _destinations = _graph.GetListOfShortest(_graph[start], typeOfAlgorithms[0]).ToList();
+            _destinations = _graph.GetListOfShortest(_graph[start], SelectedAlgorithm).ToList();
+            StateHasChanged();
         }
         else
         {
@@ -171,7 +193,4 @@
             }
         }
     }
-    
-    
-
 }

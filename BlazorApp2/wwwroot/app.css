@@ -101,49 +101,6 @@ h1:focus {
 }
 
 
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 120px;
-    height: 34px;
-}
-
-.switch input {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.switch label {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    background-color: #ccc;
-    text-align: center;
-    line-height: 34px;
-    transition: background-color 0.2s;
-}
-
-.switch .slider {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 50%;
-    height: 30px;
-    background-color: white;
-    border-radius: 50%;
-    transition: transform 0.2s;
-}
-
-.switch input:checked + label {
-    background-color: #2196F3;
-}
-
-.switch input:checked ~ .slider {
-    transform: translateX(100%);
-}
-
 
 .calculate-button {
     margin-top: 1rem;
@@ -156,12 +113,24 @@ h1:focus {
 }
 
 
+.rst-button {
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #e50000;
+    color: white;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+
 .result-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin: 30px;
+    padding: 15px;
 }
 
 

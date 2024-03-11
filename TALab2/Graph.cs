@@ -87,8 +87,12 @@ public class Graph
         _checkedEdges.Clear();
 
         Console.WriteLine($"Road from {start.Sign} to {end.Sign}: {Functions.CollectionToString(end.CurrentRoadInGraph)}");
+
+        var result = new WayToPoint(end.CurrentWeightInGraph, new List<char>(end.CurrentRoadInGraph.ToList()));
         
-        return new(end.CurrentWeightInGraph, end.CurrentRoadInGraph.ToList());
+        ResetVertices();
+        
+        return result;
     }
 
 
@@ -216,11 +220,12 @@ public class Graph
     }
 
 
-    public void ResetVertexWeight()
+    public void ResetVertices()
     {
         foreach (Vertex vertex in Vertices)
         {
             vertex.CurrentWeightInGraph = 0;
+            vertex.CurrentRoadInGraph = new LinkedList<char>();
         }
     }
     

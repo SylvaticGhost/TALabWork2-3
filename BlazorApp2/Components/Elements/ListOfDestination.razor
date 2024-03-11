@@ -1,11 +1,10 @@
 @using TALab2
 @using System.ComponentModel.DataAnnotations
-<h3>ListOfDestination</h3>
 
 <div>
     @if(Destinations is not null)
     {
-        <h2>List of closest destination to @Graph[Start].ToShortString()</h2>
+        <h2 style="margin: 20px">List of closest destination to @Graph[Start].ToShortString()</h2>
         <div>
             @if (Destinations.Count == 0)
             {
@@ -15,9 +14,10 @@
             {
                 @foreach (var destination in Destinations)
                 {
-                    <p style="margin: 10px; font-size: 16pt">@destination.Way.ToStringLong(Graph)</p>
+                    <p style="margin: 10px; font-size: 16pt; background: @GetColourForListElement(); padding: 20px; border-radius: 10px">
+                        @destination.Way.ToStringLong(Graph)
+                    </p>
                 }
-
             }
         </div>
     }
@@ -35,5 +35,18 @@
     [Required]
     [Parameter]
     public char Start { get; set; }
+
+    private int i = 0;
     
+    public string GetColourForListElement()
+    {
+        if (i % 2 == 0)
+        {
+            i++;
+            return "lightgrey";
+        }
+        
+        i++;
+        return "white";
+    }
 }

@@ -6,7 +6,7 @@ public static class TestHelpers
 {
     public static bool CompareList(IReadOnlyList<Destination> list1, IReadOnlyList<Destination> list2, double calculationError)
     {
-        if (list1.Count() == list2.Count())
+        if (list1.Count == list2.Count())
         {
             for (int i = 0; i < list1.Count(); i++)
             {
@@ -19,20 +19,4 @@ public static class TestHelpers
         
         return false;
     }
-    
-    
-    public static char[] GetCaseForListTest()
-    {
-        List<char> testCases = [];
-    
-        for(char c = 'A'; c <= 'K'; c++)
-        {
-            testCases.Add(c);
-        }
-
-        return testCases.ToArray();
-    }
-    
-    
-    
 }
