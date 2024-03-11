@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "G:\\OP code\\TA\\RestoringTaLab2\\TestProject1\\UnitTests.csproj": {}
+    "/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/UnitTests.csproj": {}
   },
   "projects": {
-    "G:\\OP code\\TA\\RestoringTaLab2\\TALab2\\TALab2.csproj": {
+    "/Users/Kostia/Documents/GitHub/TALabWork2/TALab2/TALab2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\OP code\\TA\\RestoringTaLab2\\TALab2\\TALab2.csproj",
+        "projectUniqueName": "/Users/Kostia/Documents/GitHub/TALabWork2/TALab2/TALab2.csproj",
         "projectName": "TALab2",
-        "projectPath": "G:\\OP code\\TA\\RestoringTaLab2\\TALab2\\TALab2.csproj",
-        "packagesPath": "C:\\Users\\ktkac\\.nuget\\packages\\",
-        "outputPath": "G:\\OP code\\TA\\RestoringTaLab2\\TALab2\\obj\\",
+        "projectPath": "/Users/Kostia/Documents/GitHub/TALabWork2/TALab2/TALab2.csproj",
+        "packagesPath": "/Users/Kostia/.nuget/packages/",
+        "outputPath": "/Users/Kostia/Documents/GitHub/TALabWork2/TALab2/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ktkac\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/Kostia/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,41 +59,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\OP code\\TA\\RestoringTaLab2\\TestProject1\\UnitTests.csproj": {
+    "/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\OP code\\TA\\RestoringTaLab2\\TestProject1\\UnitTests.csproj",
+        "projectUniqueName": "/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/UnitTests.csproj",
         "projectName": "UnitTests",
-        "projectPath": "G:\\OP code\\TA\\RestoringTaLab2\\TestProject1\\UnitTests.csproj",
-        "packagesPath": "C:\\Users\\ktkac\\.nuget\\packages\\",
-        "outputPath": "G:\\OP code\\TA\\RestoringTaLab2\\TestProject1\\obj\\",
+        "projectPath": "/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/UnitTests.csproj",
+        "packagesPath": "/Users/Kostia/.nuget/packages/",
+        "outputPath": "/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ktkac\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/Kostia/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\OP code\\TA\\RestoringTaLab2\\TALab2\\TALab2.csproj": {
-                "projectPath": "G:\\OP code\\TA\\RestoringTaLab2\\TALab2\\TALab2.csproj"
+              "/Users/Kostia/Documents/GitHub/TALabWork2/TALab2/TALab2.csproj": {
+                "projectPath": "/Users/Kostia/Documents/GitHub/TALabWork2/TALab2/TALab2.csproj"
               }
             }
           }
@@ -152,7 +138,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,196 @@
+﻿@page "/"
+@using TALab2
+@rendermode InteractiveServer
+@using BlazorApp2.Components.Elements
+
+<PageTitle>Home</PageTitle>
+
+<h1>Kyiv center map</h1>
+
+<p style="font-size:18pt">
+    Chose one point to get list of nearest places, and two points if you need to calculate the distance between them.
+</p>
+
+<div class="main-container">
+    <div class="map-kyiv">
+        
+        
+    </div>
+    <div class="right-container">
+        <div class="selection-div">
+            <a style="font-weight: bold">Select a function<br/></a>
+            <select @bind="SelectedFunction" @onclick="CancelGotResult">
+                @foreach (var functionType in functionTypes)
+                {
+                    <option value="@functionType">@functionType</option>
+                }
+            </select>
+            <br/>
+            <a style="font-weight: bold">Select an algorithm<br/></a>
+            <select @bind="SelectedAlgorithm" @onclick="CancelGotResult">
+                @foreach (var typeOfAlgorithm in typeOfAlgorithms)
+                {
+                    <option value="@typeOfAlgorithm">@typeOfAlgorithm</option>
+                }
+            </select>
+            <br/>
+            <a style="font-weight: bold">Select a start point<br/></a>
+            <select @onchange="ChangeStart">
+                @foreach (var vertex in _vertices)
+                {
+                    <option value="@vertex.Sign">@vertex.ToShortString()</option>
+                }
+            </select>
+            <br/>
+            <a style="font-weight: bold">Select an end point<br/></a>
+            <select @onchange="@ChangeEnd">
+                @foreach (var vertex in _vertices)
+                {
+                    <option value="@vertex.Sign">@vertex.ToShortString()</option>
+                }
+            </select>
+        </div>
+       
+             @if (!string.IsNullOrEmpty(errorMessage))
+                {
+                    //TODO: link to css class
+                    <div style="color: red;   
+                                    font-size: 16pt;                            
+                                    padding: 8px;
+                                    margin: 15px; " id="error-field">
+                        <a>@errorMessage</a>
+                    </div>
+                }
+        
+    </div>
+    
+   
+</div>
+
+
+<div style="display: flex; justify-content: center; align-items: center; margin: 15px; padding: 10px">
+    <button class="calculate-button" @onclick="OnCalculate">Calculate</button>
+</div>
+
+<div class="result-container">
+    
+    @if (GotResult && string.IsNullOrEmpty(errorMessage))
+    {
+        @if (SelectedFunction == FunctionType.List)
+        {
+            <ListOfDestination Destinations="@_destinations" Graph="@_graph" Start="@start"/>
+        }
+        else
+        {
+            <Way WayToPoint="@_wayToPoint" Graph="@_graph"/>
+        }
+        
+        <button class="rst-button" @onclick="CancelGotResult">Reset Result</button>
+    }
+</div>
+
+
+@code {
+    
+    private readonly DataProvider _dataProvider = new ();
+
+    FunctionType[] functionTypes = [FunctionType.DistanceToPoint, FunctionType.List];
+
+    TypeOfAlgorithm[] typeOfAlgorithms = [TypeOfAlgorithm.DjikstraAlgorithm, TypeOfAlgorithm.FloydWarshallAlgorithm];
+
+    FunctionType SelectedFunction;
+
+    TypeOfAlgorithm SelectedAlgorithm;
+    
+    private List<Vertex> _vertices;
+    private Graph _graph;
+    
+    private List<Destination>? _destinations;
+    private WayToPoint? _wayToPoint;
+    
+    string errorMessage = string.Empty;
+    
+    char start = 'A';
+    char end = 'B';
+    
+    bool GotResult = false;
+    
+    protected override void OnInitialized()
+    {
+        SelectedFunction = functionTypes[0];
+        SelectedAlgorithm = typeOfAlgorithms[0];
+        _vertices = _dataProvider.Vertixes;
+        _graph = new Graph(_dataProvider.Vertixes, _dataProvider.Edges);
+    }
+    
+    
+    void ChangeStart(ChangeEventArgs e)
+    {
+        start = e.Value!.ToString()![0];
+        CancelGotResult();
+    }
+    
+    
+    void ChangeEnd(ChangeEventArgs e)
+    {
+        end = e.Value!.ToString()![0];
+        CancelGotResult();
+    }
+    
+    
+    Task OnCalculate()
+    {
+        CancelGotResult();
+        
+        try
+        {
+            if (!_graph.ValidVertexSign(start))
+            {
+                throw new ArgumentException("Start point is not selected");
+            }
+            Calculate();
+            GotResult = true;
+            errorMessage = string.Empty;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+        StateHasChanged();
+        return Task.CompletedTask;
+    }
+
+    
+    Task CancelGotResult()
+    {
+        _destinations = null;
+        _wayToPoint = null;
+        GotResult = false;
+        StateHasChanged();
+        return Task.CompletedTask;
+    }
+    
+    
+    void Calculate()
+    {
+        if (SelectedFunction == FunctionType.List)
+        {
+            _destinations = _graph.GetListOfShortest(_graph[start], SelectedAlgorithm).ToList();
+            StateHasChanged();
+        }
+        else
+        {
+            if(!_graph.ValidVertexSign(end))
+                throw new ArgumentException("End point is not selected");
+            
+            if (SelectedAlgorithm == TypeOfAlgorithm.DjikstraAlgorithm)
+            {
+                _wayToPoint = _graph.DijkstraAlgorithm(_graph[start], _graph[end]);
+            }
+            else
+            {
+                _wayToPoint = _graph.FloydWarshallAlgorithm(_graph[start], _graph[end]);
+            }
+        }
+    }
+}

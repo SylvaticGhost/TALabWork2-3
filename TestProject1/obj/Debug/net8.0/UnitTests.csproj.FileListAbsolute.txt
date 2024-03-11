@@ -1,107 +1,320 @@
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\CoverletSourceRootsMapping_UnitTests
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\testhost.exe
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\testhost.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\NUnit3.TestAdapter.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\NUnit3.TestAdapter.pdb
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\nunit.engine.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\nunit.engine.api.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\nunit.engine.core.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\testcentric.engine.metadata.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\TALab2.deps.json
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\TALab2.runtimeconfig.json
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\TALab2.exe
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\UnitTests.deps.json
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\UnitTests.runtimeconfig.json
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\UnitTests.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\UnitTests.pdb
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\Microsoft.TestPlatform.CoreUtilities.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\Microsoft.TestPlatform.PlatformAbstractions.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\Microsoft.TestPlatform.CommunicationUtilities.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\Microsoft.TestPlatform.CrossPlatEngine.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\Microsoft.TestPlatform.Utilities.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\Newtonsoft.Json.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\NuGet.Frameworks.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\NumSharp.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\nunit.framework.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\TALab2.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\bin\Debug\net8.0\TALab2.pdb
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\obj\Debug\net8.0\UnitTests.csproj.AssemblyReference.cache
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\obj\Debug\net8.0\UnitTests.GeneratedMSBuildEditorConfig.editorconfig
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\obj\Debug\net8.0\UnitTests.AssemblyInfoInputs.cache
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\obj\Debug\net8.0\UnitTests.AssemblyInfo.cs
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\obj\Debug\net8.0\UnitTests.csproj.CoreCompileInputs.cache
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\obj\Debug\net8.0\UnitTests.sourcelink.json
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\obj\Debug\net8.0\UnitTests.csproj.CopyComplete
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\obj\Debug\net8.0\UnitTests.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\obj\Debug\net8.0\refint\UnitTests.dll
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\obj\Debug\net8.0\UnitTests.pdb
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\obj\Debug\net8.0\UnitTests.genruntimeconfig.cache
-G:\OP code\OPTerm2\RestoringTaLab2\TestProject1\obj\Debug\net8.0\ref\UnitTests.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/CoverletSourceRootsMapping_UnitTests
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/testhost.exe
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/testhost.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/NUnit3.TestAdapter.pdb
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/nunit.engine.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/nunit.engine.api.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/nunit.engine.core.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/testcentric.engine.metadata.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/TALab2.deps.json
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/TALab2.runtimeconfig.json
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/TALab2.exe
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/UnitTests.deps.json
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/UnitTests.runtimeconfig.json
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/UnitTests.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/UnitTests.pdb
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Microsoft.TestPlatform.CoreUtilities.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Microsoft.TestPlatform.PlatformAbstractions.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Microsoft.TestPlatform.CommunicationUtilities.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Microsoft.TestPlatform.CrossPlatEngine.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Microsoft.TestPlatform.Utilities.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Microsoft.VisualStudio.TestPlatform.Common.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Newtonsoft.Json.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/NuGet.Frameworks.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/NumSharp.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/nunit.framework.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/TALab2.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/bin/Debug/net8.0/TALab2.pdb
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.csproj.AssemblyReference.cache
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.AssemblyInfoInputs.cache
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.AssemblyInfo.cs
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.csproj.CoreCompileInputs.cache
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.sourcelink.json
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.csproj.CopyComplete
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/obj/Debug/net8.0/refint/UnitTests.dll
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.pdb
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.genruntimeconfig.cache
+G:/OP code/OPTerm2/RestoringTaLab2/TestProject1/obj/Debug/net8.0/ref/UnitTests.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/CoverletSourceRootsMapping_UnitTests
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/testhost.exe
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/testhost.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/NUnit3.TestAdapter.pdb
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/nunit.engine.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/nunit.engine.api.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/nunit.engine.core.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/testcentric.engine.metadata.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/TALab2.deps.json
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/TALab2.runtimeconfig.json
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/TALab2.exe
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/UnitTests.deps.json
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/UnitTests.runtimeconfig.json
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/UnitTests.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/UnitTests.pdb
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Microsoft.TestPlatform.CoreUtilities.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Microsoft.TestPlatform.PlatformAbstractions.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Microsoft.TestPlatform.CommunicationUtilities.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Microsoft.TestPlatform.CrossPlatEngine.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Microsoft.TestPlatform.Utilities.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Microsoft.VisualStudio.TestPlatform.Common.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/Newtonsoft.Json.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/NuGet.Frameworks.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/NumSharp.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/nunit.framework.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/TALab2.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/bin/Debug/net8.0/TALab2.pdb
+G:/OP code/TA/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.csproj.AssemblyReference.cache
+G:/OP code/TA/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+G:/OP code/TA/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.AssemblyInfoInputs.cache
+G:/OP code/TA/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.AssemblyInfo.cs
+G:/OP code/TA/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.csproj.CoreCompileInputs.cache
+G:/OP code/TA/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.sourcelink.json
+G:/OP code/TA/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.csproj.CopyComplete
+G:/OP code/TA/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/obj/Debug/net8.0/refint/UnitTests.dll
+G:/OP code/TA/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.pdb
+G:/OP code/TA/RestoringTaLab2/TestProject1/obj/Debug/net8.0/UnitTests.genruntimeconfig.cache
+G:/OP code/TA/RestoringTaLab2/TestProject1/obj/Debug/net8.0/ref/UnitTests.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/CoverletSourceRootsMapping_UnitTests
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/NUnit3.TestAdapter.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/NUnit3.TestAdapter.pdb
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/nunit.engine.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/nunit.engine.api.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/nunit.engine.core.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/testcentric.engine.metadata.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/TALab2.deps.json
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/TALab2.runtimeconfig.json
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/TALab2
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/UnitTests.deps.json
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/UnitTests.runtimeconfig.json
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/UnitTests.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/UnitTests.pdb
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/Microsoft.TestPlatform.CoreUtilities.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/Microsoft.TestPlatform.PlatformAbstractions.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/Microsoft.TestPlatform.CommunicationUtilities.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/Microsoft.TestPlatform.CrossPlatEngine.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/Microsoft.TestPlatform.Utilities.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/Microsoft.VisualStudio.TestPlatform.Common.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/testhost.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/NuGet.Frameworks.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/NumSharp.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/nunit.framework.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/TALab2.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/bin/Debug/net8.0/TALab2.pdb
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/obj/Debug/net8.0/UnitTests.csproj.AssemblyReference.cache
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/obj/Debug/net8.0/UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/obj/Debug/net8.0/UnitTests.AssemblyInfoInputs.cache
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/obj/Debug/net8.0/UnitTests.AssemblyInfo.cs
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/obj/Debug/net8.0/UnitTests.csproj.CoreCompileInputs.cache
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/obj/Debug/net8.0/UnitTests.sourcelink.json
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/obj/Debug/net8.0/UnitTests.csproj.CopyComplete
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/obj/Debug/net8.0/UnitTests.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/obj/Debug/net8.0/refint/UnitTests.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/obj/Debug/net8.0/UnitTests.pdb
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/obj/Debug/net8.0/UnitTests.genruntimeconfig.cache
+/Users/Kostia/Documents/GitHub/TALabWork2/TestProject1/obj/Debug/net8.0/ref/UnitTests.dll

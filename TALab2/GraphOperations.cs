@@ -28,7 +28,7 @@ public class GraphOperations
     }
 
 
-    public Matrix CreateDistanceMatrix(Matrix previousDistanceM, int vertex)
+    public Matrix CreateDistanceMatrix(Matrix previousDistanceM, int vertex, WaysTable table)
     {
         Matrix distanceMatrix = Matrix.CreateEmptyMatrix(previousDistanceM.NumRows, previousDistanceM.NumCols);
 
@@ -38,11 +38,17 @@ public class GraphOperations
             for (int j = 0; j < previousDistanceM.NumCols; j++)
             {
                 double a = previousDistanceM[i][vertex] + previousDistanceM[vertex][j];
-                if (i == j)
+                
+                if (i == j) //reduce cases on diagonal as it shows distance between same points
                     distanceMatrix[i][j] = 0;
+                
+                //if a new distance is shorter than the previous one, update the matrix
                 else if ((a < previousDistanceM[i][j] && previousDistanceM[i][j] >= 0) ||
                     (previousDistanceM[i][j] <= 0 && a > 0))
+                {
                     distanceMatrix[i][j] = a;
+                    table[i, j].Add(Graph.GetSignFromIndex(vertex));
+                }
                 else
                     distanceMatrix[i][j] = previousDistanceM[i][j];
             }

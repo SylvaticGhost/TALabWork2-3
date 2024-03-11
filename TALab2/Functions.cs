@@ -1,30 +1,11 @@
-﻿using NumSharp;
+﻿using System.Globalization;
+using NumSharp;
 using NumSharp.Generic;
 
 namespace TALab2;
 
-public class Functions
+public static class Functions
 {
-    public Functions() {}
-
-    public static List<List<double>> ConvertNdArrayToList(NDArray array)
-    {
-        List<List<double>> res = [];
-
-        for (int i = 0; i < array.shape[0]; i++)
-        {
-            List<double> row = new List<double>();
-            for (int j = 0; j < array.shape[1]; j++)
-            {
-                row.Add(array[i, j]);
-            }
-            res.Add(row);
-        }
-
-        return res;
-    }
-
-
     public static void PrintList<T>(List<T> list)
     {
         foreach (T obj in list)
@@ -34,15 +15,47 @@ public class Functions
     }
 
 
-    public static string EnumerableToString<T>(IEnumerable<T> collection)
+    public static string CollectionToString<T>(IEnumerable<T> collection)
     {
         string result = "";
 
         foreach (T obj in collection)
         {
-            result += obj!.ToString() + '\n';
+            result += obj!.ToString() + ' ';
         }
+        result += '\n';
+        return result;
+    }
+    
+    
+    public static string WayListToString<T>(IEnumerable<T> collection)
+    {
+        string result = "";
+        
+
+        foreach (T obj in collection)
+        {
+            result += obj!.ToString() + " -> ";
+        }
+        
+        if(result.Length >= 4)
+            result = result[..^4];
 
         return result;
     }
+    
+    
+    // public static string WayListToString<T>(LinkedList<T> collection)
+    // {
+    //     string result = "";
+    //
+    //     foreach (T obj in collection)
+    //     {
+    //         result += obj!.ToString() + " -> ";
+    //     }
+    //     
+    //     result = result[..^4];
+    //
+    //     return result;
+    // }
 }

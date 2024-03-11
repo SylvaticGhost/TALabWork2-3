@@ -13,6 +13,8 @@ public class Vertex
     public double CurrentWeightInGraph { get; set; }
     public Cords Cords { get; }
     
+    public LinkedList<char> CurrentRoadInGraph { get; set; } = [];
+    
     public Vertex(char sign,Cords cords,string name = "")
     {
         Sign = sign;
@@ -24,6 +26,12 @@ public class Vertex
     public override string ToString()
     {
         return $"{Sign} Cords: {Cords}, Name: {Name}";
+    }
+    
+    
+    public string ToShortString()
+    {
+        return $"{Sign} {Name}";
     }
     
 }
