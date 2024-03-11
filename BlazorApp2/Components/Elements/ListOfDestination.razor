@@ -1,21 +1,38 @@
 @using TALab2
+@using System.ComponentModel.DataAnnotations
 <h3>ListOfDestination</h3>
 
 <div>
-    <h2>List of closest destination to @Start</h2>
-    <div>
-        @foreach(var destination in Destinations)
-        {
-            <p>@destination.Way.ToStringLong(Graph)</p>
-        }
-    </div>
+    @if(Destinations is not null)
+    {
+        <h2>List of closest destination to @Graph[Start].ToShortString()</h2>
+        <div>
+            @if (Destinations.Count == 0)
+            {
+                <p>No destinations found</p>
+            }
+            else
+            {
+                @foreach (var destination in Destinations)
+                {
+                    <p style="margin: 10px; font-size: 16pt">@destination.Way.ToStringLong(Graph)</p>
+                }
+
+            }
+        </div>
+    }
 </div>
 
 @code {
+    [Required]
     [Parameter]
-    public List<Destination> Destinations { get; set; }
+    public List<Destination>? Destinations { get; set; }
+    
+    [Required]
     [Parameter]
     public Graph Graph { get; set; }
+    
+    [Required]
     [Parameter]
     public char Start { get; set; }
     

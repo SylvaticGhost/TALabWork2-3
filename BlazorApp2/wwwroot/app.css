@@ -83,6 +83,15 @@ h1:focus {
 }
 
 
+.right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
 .main-container {
     display: flex;
     flex-direction: row;
@@ -144,4 +153,23 @@ h1:focus {
     color: white;
     font-size: 18pt;
     cursor: pointer;
+}
+
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+.error-message {
+    color: red;
+    font-size: 16pt;
+    border-radius: 10px;
+    border-color: black;
+    padding: 8px;
+    margin: 15px;
 }

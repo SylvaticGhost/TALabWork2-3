@@ -1,9 +1,14 @@
 @using TALab2
-<h3>Way</h3>
-<div>
-    <a>@WayToPoint.ToStringLong(Graph)</a>
-</div>
+@using System.ComponentModel.DataAnnotations
+<h4>Way</h4>
+@if(WayToPoint is not null)
+{
+    <div>
+        <a style="font-size: 16pt; padding: 20px; margin: 20px">@WayToPoint.ToStringLong(Graph)</a>
+    </div>
+}
+
 @code {
-    [Parameter] public WayToPoint WayToPoint { get; set; }
-    [Parameter] public Graph Graph { get; set; }
+    [Required] [Parameter] public WayToPoint? WayToPoint { get; set; }
+    [Required] [Parameter] public Graph Graph { get; set; }
 }

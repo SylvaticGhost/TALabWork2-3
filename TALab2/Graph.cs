@@ -253,4 +253,7 @@ public class Graph
         return Edges.First(e => e.Vertix1.Sign == sign1 && e.Vertix2.Sign == sign2 
                                 || e.Vertix1.Sign == sign2 && e.Vertix2.Sign == sign1);
     }
+    
+    
+    public bool ValidVertexSign(char sign) => Vertices.Any(v => v.Sign == sign);
 }
