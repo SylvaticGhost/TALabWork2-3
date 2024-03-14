@@ -24,6 +24,8 @@ public class DataProvider
     
 
     public List<Edge> Edges { get; set; }
+    
+    public List<Edge> OrientedEdges { get; set; }
 
     public DataProvider()
     {
@@ -45,6 +47,28 @@ public class DataProvider
             new Edge(GetVertix('I'), GetVertix('J')),
             new Edge(GetVertix('J'), GetVertix('K')),
             new Edge(GetVertix('F'), GetVertix('J')),
+            new Edge(GetVertix('K'), GetVertix('F')),
+            new Edge(GetVertix('F'), GetVertix('E'))
+        ];
+
+        OrientedEdges =
+        [
+            new Edge(GetVertix('A'), GetVertix('B')),
+            new Edge(GetVertix('B'), GetVertix('C')),
+            new Edge(GetVertix('C'), GetVertix('D')),
+            new Edge(GetVertix('C'), GetVertix('E'), true),
+            new Edge(GetVertix('D'), GetVertix('F'), true),
+            new Edge(GetVertix('F'), GetVertix('E')),
+            new Edge(GetVertix('D'), GetVertix('G')),
+            new Edge(GetVertix('D'), GetVertix('I')),
+            new Edge(GetVertix('J'), GetVertix('D'), true),
+            new Edge(GetVertix('G'), GetVertix('H')),
+            new Edge(GetVertix('G'), GetVertix('I')),
+            new Edge(GetVertix('G'), GetVertix('J'), true),
+            new Edge(GetVertix('H'), GetVertix('I'), true),
+            new Edge(GetVertix('I'), GetVertix('J')),
+            new Edge(GetVertix('J'), GetVertix('K')),
+            new Edge(GetVertix('F'), GetVertix('J'), true),
             new Edge(GetVertix('K'), GetVertix('F')),
             new Edge(GetVertix('F'), GetVertix('E'))
         ];

@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets/BlazorApp2.bundle.scp.css"
     },
     {
+      "Id": "/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/wwwroot/.nojekyll",
+      "PackagePath": "staticwebassets/.nojekyll"
+    },
+    {
       "Id": "/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/wwwroot/KyivCenterMap.png",
       "PackagePath": "staticwebassets/KyivCenterMap.png"
+    },
+    {
+      "Id": "/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/wwwroot/Map.jpg",
+      "PackagePath": "staticwebassets/Map.jpg"
     },
     {
       "Id": "/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/wwwroot/app.css",

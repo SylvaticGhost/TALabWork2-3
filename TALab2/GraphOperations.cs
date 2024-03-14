@@ -53,7 +53,46 @@ public class GraphOperations
                     distanceMatrix[i][j] = previousDistanceM[i][j];
             }
         }
-
+        
         return distanceMatrix;
     }
+
+    
+    public static Dictionary<char, List<char>> DfsSearch(Graph graph, char start)
+    {
+        Dictionary<char, List<char>> tree = new Dictionary<char, List<char>>();
+        List<char> visited = new List<char> { start };
+
+        Stack<char> stack = new Stack<char>();
+        stack.Push(start);
+
+        var vertex = start;
+        tree[vertex] = new List<char>();
+
+        while (stack.Count > 0)
+        {
+            var next = graph.NeighbourVertices![vertex].FirstOrDefault(v => !visited.Contains(v));
+
+            if (next != default(char))
+            {
+                visited.Add(next);
+                stack.Push(next);
+                tree[vertex].Add(next);
+                vertex = next;
+                if (!tree.ContainsKey(vertex))
+                {
+                    tree[vertex] = new List<char>();
+                }
+            }
+            else
+            {
+                stack.Pop();
+                if (stack.Count > 0)
+                    vertex = stack.Peek();
+            }
+        }
+
+        return tree;
+    }
+    
 }

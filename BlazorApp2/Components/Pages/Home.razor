@@ -2,6 +2,7 @@
 @using TALab2
 @rendermode InteractiveServer
 @using BlazorApp2.Components.Elements
+@using TaLab3
 
 <PageTitle>Home</PageTitle>
 
@@ -50,6 +51,21 @@
                 }
             </select>
         </div>
+        <div class="selection-div">
+            <a style="font-weight: bold">Select a SCC algorithm</a>
+            <select @bind="_selectedSccAlgorithm">
+                @foreach(var algorithm in _sccAlgorithms)
+                {
+                    <option value="@algorithm">@algorithm</option>
+                }
+            </select>
+            
+            <label class="switch">
+                Oriented
+                <input type="checkbox" @bind="_isOriented"/>
+                <span class="slider"></span>
+            </label>
+        </div>
        
              @if (!string.IsNullOrEmpty(errorMessage))
                 {
@@ -69,7 +85,9 @@
 
 
 <div style="display: flex; justify-content: center; align-items: center; margin: 15px; padding: 10px">
-    <button class="calculate-button" @onclick="OnCalculate">Calculate</button>
+    <button class="calculate-button" @onclick="OnCalculate" style="margin-right: 100px">Calculate</button>
+    
+    <button class="calculate-button" @onclick="PerformSccAlgorithm">SCC Algorithm</button>
 </div>
 
 <div class="result-container">
@@ -80,12 +98,21 @@
         {
             <ListOfDestination Destinations="@_destinations" Graph="@_graph" Start="@start"/>
         }
-        else
+        else if(SelectedFunction == FunctionType.DistanceToPoint)
         {
             <Way WayToPoint="@_wayToPoint" Graph="@_graph"/>
         }
         
         <button class="rst-button" @onclick="CancelGotResult">Reset Result</button>
+    }
+    else if (sccs != null)
+    {
+        <p style="font-size: 16pt">
+            <a style="font-weight: bold">SCC's areas:</a> <br/>
+            @SccAlgorithm.PrintSccs(sccs);
+        </p>
+        <button class="rst-button" @onclick="CancelCSccResult">Reset Result</button>
+
     }
 </div>
 
@@ -101,6 +128,14 @@
     FunctionType SelectedFunction;
 
     TypeOfAlgorithm SelectedAlgorithm;
+    
+    IEnumerable<TypeOfSccAlgorithm> _sccAlgorithms = Enum.GetValues(typeof(TypeOfSccAlgorithm)).Cast<TypeOfSccAlgorithm>();
+    
+    TypeOfSccAlgorithm _selectedSccAlgorithm = TypeOfSccAlgorithm.TarjanAlgorithm;
+    
+    List<List<char>>? sccs;
+    
+    bool _isOriented = false;
     
     private List<Vertex> _vertices;
     private Graph _graph;
@@ -192,5 +227,34 @@
                 _wayToPoint = _graph.FloydWarshallAlgorithm(_graph[start], _graph[end]);
             }
         }
+    }
+    
+    
+    void PerformSccAlgorithm()
+    {
+        if (_selectedSccAlgorithm == null)
+        {
+            throw new ArgumentException("Algorithm is not selected");
+        }
+        
+        List<Edge> edges = _isOriented ? _dataProvider.OrientedEdges : _dataProvider.Edges;
+        
+        Graph graph = new Graph(_dataProvider.Vertixes, edges);
+
+        if (_selectedSccAlgorithm == TypeOfSccAlgorithm.TarjanAlgorithm)
+        {
+            sccs = SccAlgorithm.TarjanAlgorithm(graph);
+        }
+        else
+            sccs = SccAlgorithm.AlgorithmCCS(graph);
+        
+        StateHasChanged();
+    }
+    
+    
+    void CancelCSccResult()
+    {
+        sccs = null;
+        StateHasChanged();
     }
 }

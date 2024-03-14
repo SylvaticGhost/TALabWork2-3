@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y8rDa0fYsUheXfAJNhaim1tt/Ob4OurcRBtKwnXvlhk=",
+  "Hash": "tU4Vm2ii365mIXILwVVuEH1NpbM0URapkqORK1rre24=",
   "Source": "BlazorApp2",
   "BasePath": "_content/BlazorApp2",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/obj/Debug/net8.0/scopedcss/projectbundle/BlazorApp2.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/wwwroot/.nojekyll",
+      "SourceId": "BlazorApp2",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/wwwroot/",
+      "BasePath": "_content/BlazorApp2",
+      "RelativePath": ".nojekyll",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.nojekyll"
     },
     {
       "Identity": "/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/wwwroot/app.css",
@@ -148,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/KyivCenterMap.png"
+    },
+    {
+      "Identity": "/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/wwwroot/Map.jpg",
+      "SourceId": "BlazorApp2",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/wwwroot/",
+      "BasePath": "_content/BlazorApp2",
+      "RelativePath": "Map.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Map.jpg"
     },
     {
       "Identity": "/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/wwwroot/pin.png",
