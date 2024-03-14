@@ -2,10 +2,10 @@
 
 public class Edge
 {
-    public Vertex Vertix1 { get; }
-    public Vertex Vertix2 { get;  }
-    public double Weight { get; } 
-    public bool Oriented { get; }
+    public Vertex Vertix1 { get; set; }
+    public Vertex Vertix2 { get; set; }
+    public double Weight { get; set; } 
+    public bool Oriented { get; set; }
     
     public (char, char) Destinations { get; }
 

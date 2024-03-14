@@ -43,19 +43,17 @@ public static class Functions
 
         return result;
     }
-    
-    
-    // public static string WayListToString<T>(LinkedList<T> collection)
-    // {
-    //     string result = "";
-    //
-    //     foreach (T obj in collection)
-    //     {
-    //         result += obj!.ToString() + " -> ";
-    //     }
-    //     
-    //     result = result[..^4];
-    //
-    //     return result;
-    // }
+
+
+    public static string SccListToString(List<List<char>> collection)
+    {
+        string result = "";
+        
+        for(int i = 0; i < collection.Count; i++)
+        {
+            result += $"SCC {i + 1}: {WayListToString(collection[i])}\n";
+        }
+        
+        return result;
+    }
 }

@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "TestProject1\U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp2", "BlazorApp2\BlazorApp2.csproj", "{466C9E55-83EA-41D7-9000-ADE784D0816C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaLab3", "TaLab3\TaLab3.csproj", "{850F6274-A1D3-4AB1-8AFE-0703F7E8C703}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{466C9E55-83EA-41D7-9000-ADE784D0816C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{466C9E55-83EA-41D7-9000-ADE784D0816C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{466C9E55-83EA-41D7-9000-ADE784D0816C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{850F6274-A1D3-4AB1-8AFE-0703F7E8C703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{850F6274-A1D3-4AB1-8AFE-0703F7E8C703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{850F6274-A1D3-4AB1-8AFE-0703F7E8C703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{850F6274-A1D3-4AB1-8AFE-0703F7E8C703}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

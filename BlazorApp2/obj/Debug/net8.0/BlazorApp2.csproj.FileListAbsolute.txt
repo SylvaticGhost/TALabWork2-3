@@ -36,3 +36,8 @@
 /Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/bin/Debug/net8.0/TALab2.pdb
 /Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/obj/Debug/net8.0/BlazorApp2.csproj.AssemblyReference.cache
 /Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/obj/Debug/net8.0/BlazorApp2.csproj.CopyComplete
+/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/bin/Debug/net8.0/TaLab3.deps.json
+/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/bin/Debug/net8.0/TaLab3.runtimeconfig.json
+/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/bin/Debug/net8.0/TaLab3
+/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/bin/Debug/net8.0/TaLab3.dll
+/Users/Kostia/Documents/GitHub/TALabWork2/BlazorApp2/bin/Debug/net8.0/TaLab3.pdb

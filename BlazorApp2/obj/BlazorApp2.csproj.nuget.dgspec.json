@@ -28,6 +28,9 @@
             "projectReferences": {
               "/Users/Kostia/Documents/GitHub/TALabWork2/TALab2/TALab2.csproj": {
                 "projectPath": "/Users/Kostia/Documents/GitHub/TALabWork2/TALab2/TALab2.csproj"
+              },
+              "/Users/Kostia/Documents/GitHub/TALabWork2/TaLab3/TaLab3.csproj": {
+                "projectPath": "/Users/Kostia/Documents/GitHub/TALabWork2/TaLab3/TaLab3.csproj"
               }
             }
           }
@@ -103,6 +106,63 @@
               "version": "[0.30.0, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Kostia/Documents/GitHub/TALabWork2/TaLab3/TaLab3.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Kostia/Documents/GitHub/TALabWork2/TaLab3/TaLab3.csproj",
+        "projectName": "TaLab3",
+        "projectPath": "/Users/Kostia/Documents/GitHub/TALabWork2/TaLab3/TaLab3.csproj",
+        "packagesPath": "/Users/Kostia/.nuget/packages/",
+        "outputPath": "/Users/Kostia/Documents/GitHub/TALabWork2/TaLab3/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Kostia/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/Kostia/Documents/GitHub/TALabWork2/TALab2/TALab2.csproj": {
+                "projectPath": "/Users/Kostia/Documents/GitHub/TALabWork2/TALab2/TALab2.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",

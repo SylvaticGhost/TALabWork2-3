@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\TALab2\TALab2.csproj" />
+      <ProjectReference Include="..\TaLab3\TaLab3.csproj" />
     </ItemGroup>
 
 </Project>
