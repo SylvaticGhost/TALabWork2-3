@@ -96,12 +96,18 @@ public class Graph
     }
 
 
-    private IEnumerable<Edge> GetEdgesForVertex(Vertex vertex)
+    public IEnumerable<Edge> GetEdgesForVertex(Vertex vertex)
     {
         return Edges.Where(edge =>
                 edge.Vertix1.Sign == vertex.Sign || (edge.Vertix2.Sign == vertex.Sign && !edge.Oriented))
             .Except(_checkedEdges, new EdgeComparer())
             .OrderBy(edge => edge.Weight);
+    }
+    
+    
+    public IEnumerable<Vertex> GetNeighboursForVertex(Vertex vertex)
+    {
+        return Vertices.Where(v => v.Sign != vertex.Sign && NeighbourVertices![vertex.Sign].Contains(v.Sign));
     }
 
 
@@ -261,4 +267,37 @@ public class Graph
     
     
     public bool ValidVertexSign(char sign) => Vertices.Any(v => v.Sign == sign);
+
+
+    public override string ToString()
+    {
+        string result = "";
+        
+        result += "Vertices:\n";
+        foreach (Vertex vertex in Vertices)
+        {
+            result += vertex + "\n";
+        }
+        result += "\n";
+        
+        result += "Edges:\n";
+        foreach (Edge edge in Edges)
+        {
+            result += edge + "\n";
+        }
+        result += "\n";
+        
+        return result;
+    }
+    
+    
+    public void Transpose()
+    {
+        foreach (Edge edge in Edges)
+        {
+            (edge.Vertix1, edge.Vertix2) = (edge.Vertix2, edge.Vertix1);
+        }
+        
+        InitNeighbourVerticesDictionary();
+    }
 }
